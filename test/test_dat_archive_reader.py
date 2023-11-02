@@ -34,7 +34,7 @@ def test_json():
     archive.add_data('testing 123')
     archive.add_data(blns)
     archive.add_data('testing 123456789')
-    archive.commit()
+    archive.commit("archive_name")
 
     reader = lmd.Reader('test_dir')
 
